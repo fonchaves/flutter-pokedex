@@ -77,3 +77,43 @@ fonts:
 18. Na `home_page.dart` importe e coloque no lugar a chamada para o `AppBarHome()` na `Stack()`
 
 ### "Flutter Pokedex: Aula 2 - Consumindo API com MobX"
+
+19. Criar o arquivo `stores/pokeapi_store.dart`
+
+20. Instalar a extensão flutter_mobx no VSCode
+
+21. Aplicar o snippet mobx no `pokeapi_store.dart`
+
+22. Rodar o comando abaixo para trabalhar com o Mobx
+    `flutter packages pub run build_runner build`
+
+23. Após a geração do `pokeapi_store.g.dart`, rode o comando abaixo para o console
+    ficar monitorando as alterações do arquivo `pokeapi_store.dart`
+    `flutter packages pub run build_runner watch`
+
+24. Entre na URL abaixo e copie o conteúdo JSON da pokedex
+    `https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json`
+
+25. Entre no site abaixo, cole o conteúdo do Json e transforme para uma Dart Class com nome de PokeAPI
+    `https://javiercbk.github.io/json_to_dart/`
+
+26. Crie o arquivo `models/pokeapi.dart` e cole o conteúdo da PokeAPI
+
+27. Duplique a classe NextEvolution e a nomeie como PrevEvolution para corrigir os erros
+
+28. Adicionar a dependência http em `pubspec.yaml`
+
+```yaml
+dependencies:
+  http: ^0.12.0+4
+```
+
+29. Criar o arquivo `consts/consts_api.dart` e colocar a URL do pokedex JSON
+
+30. Importar a pokeapiURL no Store, dentro da loadPokeAPI()
+
+31. Preparar a fetchPokemonList para carregar e receber o conteúdo da loadPokeAPI()
+
+32. Ir em home_page.dart e criar um Observer para consumir a pokeapi_store.dart
+
+33.
