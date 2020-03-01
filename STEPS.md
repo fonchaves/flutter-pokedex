@@ -116,4 +116,23 @@ dependencies:
 
 32. Ir em home_page.dart e criar um Observer para consumir a pokeapi_store.dart
 
-33.
+### "Flutter Pokedex: Aula 3 - Lista Animada"
+
+33. Em `pokeapi_store.dart`, colocar como null a \_pokeAPI na fetchPokemonList()
+
+34. No lugar da ListView.builder(), desenvolver a AnimationLimiter() contendo a
+    GridView.builder() e importar o `flutter_staggered_animations.dart`
+
+35. Criar o arquivo `pages/home_page/widgets/poke_item.dart`
+
+36. Desenvolver o arquivo `poke_item.dart`
+
+### "Flutter Pokedex: Aula 4 - Posicionamento e Layouts"
+
+37. Adicionar action getImage() em `pokeapi_store.dart`
+
+38. Adicionar action getPokemon() em `pokeapi_store.dart`
+
+39. Criar novas constantes de cores em `consts_api.dart`
+
+40. Configurar itens criados em home_page.dart
